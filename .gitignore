@@ -1,0 +1,33 @@
+# Compiled object files
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Executable files
+*.exe
+*.out
+*.app
+
+# Debug and log files
+*.log
+*.stackdump
+
+# CMake build directories
+/build/
+CMakeFiles/
+CMakeCache.txt
+Makefile
+cmake_install.cmake
+
+# Code::Blocks files
+*.depend
+*.layout
+
+# VS Code
+.vscode/
+
+# macOS system files
+.DS_Store

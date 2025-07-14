@@ -1,0 +1,32 @@
+# Preprocessor:
+
+[C++](https://en.cppreference.com/w/cpp.html "cpp")
+
+[C++ language](https://en.cppreference.com/w/cpp/language.html "cpp/language")
+
+**Preprocessor**
+
+The preprocessor is executed at [translation phase 4](https://en.cppreference.com/w/cpp/language/translation_phases.html#Phase_4 "cpp/language/translation phases"), before the compilation. The result of preprocessing is a single file which is then passed to the actual compiler.
+
+### Directives
+
+The preprocessing directives control the behavior of the preprocessor. Each directive occupies one line and has the following format:
+
+- the # character.
+- a sequence of:
+
+- a standard-defined directive name (listed [below](https://en.cppreference.com/w/cpp/preprocessor.html#Capabilities)) followed by the corresponding arguments, or
+- one or more [preprocessing tokens](https://en.cppreference.com/w/cpp/language/translation_phases.html#Phase_3 "cpp/language/translation phases") where the beginning token is not a standard-defined directive name, in this case the directive is conditionally-supported with implementation-defined semantics (e.g. a common non-standard extension is the directive #warning which emits a user-defined message during compilation)(until C++23), or
+- nothing, in this case the directive has no effect.
+
+- a line break.
+
+|                                                                                                                                                       |               |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------- | ------------- |
+| The [module and import directives](https://en.cppreference.com/w/cpp/language/modules.html "cpp/language/modules") are also preprocessing directives. | (since C++20) |
+|                                                                                                                                                       |               |
+| #define EMPTY<br>EMPTY   #   include <file.h> // not a preprocessing directive                                                                        |               |
+
+Preprocessing directives must not come from macro expansion.
+
+
