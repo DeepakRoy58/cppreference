@@ -16,6 +16,9 @@ int main()
         for (int end = st; end < n; end++)
         {
             currSum += arr[end];
+
+            cout << "SubArrays ["<< st << "..."<< end << "] sum = " << currSum << endl;
+
             maxSum = max(currSum, maxSum);
         }
     }
