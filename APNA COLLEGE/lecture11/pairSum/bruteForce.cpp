@@ -1,3 +1,5 @@
+// Brute-Force Approach - Time Complexity : O(n^2)
+
 #include<iostream>
 #include<vector>
 
