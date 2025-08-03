@@ -40,6 +40,6 @@ int main(){
     int target = 13;
     vector<int>ans = pairSum(nums,target);
     
-    cout << ans[0] << "," << ans[1] << endl;
+    cout << "[" <<  ans[0] << "," << ans[1] << "]" << endl;
     return 0;
 }
