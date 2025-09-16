@@ -18,6 +18,17 @@ int main() {
         goto label; // jump back and continue
     }
 
+
+/*          label: marks a point in the code.
+
+            The if (n > 0) block executes one iteration of reversing.
+
+            At the end of the block, goto label; jumps back to repeat.
+
+            When n becomes 0, the condition fails → it skips the block and prints the result.            
+*/
+
+
 /*     while (n > 0 )
     {
         int lastDigit = n % 10 ; 
