@@ -10,13 +10,21 @@ int main() {
     int dup  = n ; 
     int revNum = 0 ;
 
-    while (n > 0 )
+    label: // label for goto
+    if (n > 0) {
+        int lastDigit = n % 10;
+        revNum = revNum * 10 + lastDigit;
+        n = n / 10;
+        goto label; // jump back and continue
+    }
+
+/*     while (n > 0 )
     {
         int lastDigit = n % 10 ; 
         revNum = revNum * 10 + lastDigit ;
         n = n / 10 ;
     }
-
+ */
 /*     if(revNum == dup) 
         cout << "True" << endl; 
     else
@@ -34,6 +42,6 @@ If it’s true → "True" is chosen.
 
 If it’s false → "False" is chosen. */
 
-cout << (revNum == dup ? "True" : "False") << endl;
+    cout << (revNum == dup ? "True" : "False") << endl;
 
-}
+    }
