@@ -1,4 +1,5 @@
 #include<iostream>
+#include<algorithm>
 using namespace std ;
 
 int main() {
@@ -16,9 +17,23 @@ int main() {
         n = n / 10 ;
     }
 
-    if(revNum == dup) 
+/*     if(revNum == dup) 
         cout << "True" << endl; 
     else
         cout << "False" << endl;
     
+} */
+
+
+/* use of ternary :
+
+condition ? value_if_true : value_if_false; 
+Here, (revNum == dup) is the condition.
+
+If it’s true → "True" is chosen.
+
+If it’s false → "False" is chosen. */
+
+cout << (revNum == dup ? "True" : "False") << endl;
+
 }
