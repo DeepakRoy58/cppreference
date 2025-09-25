@@ -7,3 +7,7 @@ for i in range(n):
             arr[j], arr[j+1] = arr[j+1], arr[j]  # Swap
 
 print("Sorted array:", arr)
+
+// stable sort: Maintains the relative order of equal elements (important in some applications).
+
+// In-place sort: Sorting done without using extra memory.                
