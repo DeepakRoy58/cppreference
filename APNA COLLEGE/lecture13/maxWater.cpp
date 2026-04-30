@@ -14,7 +14,7 @@ public:
         for (int leftBound = 0; leftBound < n; leftBound++) {
             for (int rightBound = leftBound + 1; rightBound < n; rightBound++) {
                 int width = rightBound - leftBound;
-                int ht = min(height[leftBound], height[rightBound]);  // renamed here
+                int ht = min(height[leftBound], height[rightBound]);  // renames here
                 int area = width * ht;
                 maxWater = max(area, maxWater);
             }
